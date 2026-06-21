@@ -1936,7 +1936,7 @@
           }
         }
       },
-      "SunamoWpf.Core/26.2.7.2": {
+      "SunamoWpf.Core/26.6.21.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
@@ -3551,7 +3551,7 @@
         "textcopy.nuspec"
       ]
     },
-    "SunamoWpf.Core/26.2.7.2": {
+    "SunamoWpf.Core/26.6.21.1": {
       "type": "project",
       "path": "../../SunamoWpf.Core/SunamoWpf.Core/SunamoWpf.Core.csproj",
       "msbuildProject": "../../SunamoWpf.Core/SunamoWpf.Core/SunamoWpf.Core.csproj"
@@ -3564,7 +3564,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0-windows": [
-      "SunamoWpf.Core >= 26.2.7.2"
+      "SunamoWpf.Core >= 26.6.21.1"
     ]
   },
   "packageFolders": {
@@ -3572,13 +3572,13 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "26.2.7.2",
+    "version": "26.6.21.1",
     "restore": {
-      "projectUniqueName": "E:\\vs\\Projects\\WindowsNuGetPackages\\SunamoWpf.Extensions\\SunamoWpf.Extensions\\SunamoWpf.Extensions.csproj",
+      "projectUniqueName": "E:\\vs\\Projects\\PlatformIndependentNuGetPackages\\SunamoWpf.Extensions\\SunamoWpf.Extensions\\SunamoWpf.Extensions.csproj",
       "projectName": "SunamoWpf.Extensions",
-      "projectPath": "E:\\vs\\Projects\\WindowsNuGetPackages\\SunamoWpf.Extensions\\SunamoWpf.Extensions\\SunamoWpf.Extensions.csproj",
+      "projectPath": "E:\\vs\\Projects\\PlatformIndependentNuGetPackages\\SunamoWpf.Extensions\\SunamoWpf.Extensions\\SunamoWpf.Extensions.csproj",
       "packagesPath": "C:\\Users\\aktiv\\.nuget\\packages\\",
-      "outputPath": "E:\\vs\\Projects\\WindowsNuGetPackages\\SunamoWpf.Extensions\\SunamoWpf.Extensions\\obj\\",
+      "outputPath": "E:\\vs\\Projects\\PlatformIndependentNuGetPackages\\SunamoWpf.Extensions\\SunamoWpf.Extensions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3601,8 +3601,8 @@
           "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
           "projectReferences": {
-            "E:\\vs\\Projects\\WindowsNuGetPackages\\SunamoWpf.Core\\SunamoWpf.Core\\SunamoWpf.Core.csproj": {
-              "projectPath": "E:\\vs\\Projects\\WindowsNuGetPackages\\SunamoWpf.Core\\SunamoWpf.Core\\SunamoWpf.Core.csproj"
+            "E:\\vs\\Projects\\PlatformIndependentNuGetPackages\\SunamoWpf.Core\\SunamoWpf.Core\\SunamoWpf.Core.csproj": {
+              "projectPath": "E:\\vs\\Projects\\PlatformIndependentNuGetPackages\\SunamoWpf.Core\\SunamoWpf.Core\\SunamoWpf.Core.csproj"
             }
           }
         }
