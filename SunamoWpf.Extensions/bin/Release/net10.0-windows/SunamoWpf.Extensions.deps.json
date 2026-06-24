@@ -833,7 +833,7 @@
         "dependencies": {
           "Microsoft.Extensions.Logging": "10.0.8",
           "Microsoft.Windows.Compatibility": "10.0.8",
-          "SunamoWpf.SunamoUtils": "26.2.7.2",
+          "SunamoWpf.SunamoUtils": "26.6.21.1",
           "System.Management": "10.0.8"
         },
         "runtime": {
@@ -843,7 +843,7 @@
           }
         }
       },
-      "SunamoWpf.SunamoUtils/26.2.7.2": {
+      "SunamoWpf.SunamoUtils/26.6.21.1": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "10.0.8",
           "Microsoft.Windows.Compatibility": "10.0.8",
@@ -1221,7 +1221,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "SunamoWpf.SunamoUtils/26.2.7.2": {
+    "SunamoWpf.SunamoUtils/26.6.21.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
