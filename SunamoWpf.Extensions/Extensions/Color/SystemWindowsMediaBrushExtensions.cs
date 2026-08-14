@@ -1,5 +1,6 @@
 namespace SunamoWpf.Extensions.Color;
 
+[System.Runtime.Versioning.SupportedOSPlatform("windows")]
 public static class SystemWindowsMediaSolidColorBrushExtensions
 {
     public static System.Drawing.Brush ToSystemDrawing(this System.Windows.Media.SolidColorBrush c2)

@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net10.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows7.0</TargetFramework>
     <OutputType>Library</OutputType>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>SunamoWpf</RootNamespace>
@@ -25,6 +25,7 @@
     <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
     <Optimize>false</Optimize>
     <PackageReleaseNotes>y</PackageReleaseNotes>
+    <NoWarn>CA1416;CS8625;CS8602;CS8600;CS8618;CS8622;CS8601</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\SunamoWpf.Core\SunamoWpf.Core\SunamoWpf.Core.csproj" />
