@@ -1,0 +1,12 @@
+C:\Users\aktiv\AppData\Local\Temp\build_audit_logs\SunamoWpf.Extensions.deps.json
+C:\Users\aktiv\AppData\Local\Temp\build_audit_logs\SunamoWpf.Extensions.dll
+C:\Users\aktiv\AppData\Local\Temp\build_audit_logs\SunamoWpf.Extensions.pdb
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\obj\Debug\net10.0-windows\SunamoWpf.Extensions.csproj.AssemblyReference.cache
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\obj\Debug\net10.0-windows\SunamoWpf.Extensions.GeneratedMSBuildEditorConfig.editorconfig
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\obj\Debug\net10.0-windows\SunamoWpf.Extensions.csproj.CoreCompileInputs.cache
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\obj\Debug\net10.0-windows\SunamoWpf.Extensions.sourcelink.json
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\obj\Debug\net10.0-windows\SunamoWp.DFABC1DA.Up2Date
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\obj\Debug\net10.0-windows\SunamoWpf.Extensions.dll
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\obj\Debug\net10.0-windows\refint\SunamoWpf.Extensions.dll
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\obj\Debug\net10.0-windows\SunamoWpf.Extensions.pdb
+E:\vs\Projects\WindowsNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\obj\Debug\net10.0-windows\ref\SunamoWpf.Extensions.dll
