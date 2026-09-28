@@ -3,6 +3,8 @@ global using SunamoWpf._shared;
 global using SunamoWpf._sunamo;
 global using SunamoWpf._sunamo.SunamoExceptions;
 global using System.Threading;
+global using System.Collections;
+global using System.Windows.Threading;
 global using SunamoWpf.ControlExtension;
 global using SunamoWpf.Enums;
 global using SunamoWpf.Extensions;
