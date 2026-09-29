@@ -116,7 +116,7 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
             {
                 if (this.IsNetworkAvailable)
                 {
-                    if (!FS.ExistsDirectory(base.Path))
+                    if (!Directory.Exists(base.Path))
                     {
                         this.IsNetworkAvailable = false;
                         RaiseEventNetworkPathAvailablity();
@@ -124,7 +124,7 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
                 }
                 else
                 {
-                    if (FS.ExistsDirectory(base.Path))
+                    if (Directory.Exists(base.Path))
                     {
                         this.IsNetworkAvailable = true;
                         RaiseEventNetworkPathAvailablity();
