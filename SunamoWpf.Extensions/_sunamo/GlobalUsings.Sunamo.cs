@@ -1,6 +1,5 @@
-﻿global using Microsoft.Win32;
-global using SunamoWpf._sunamo;
-global using SunamoWpf._sunamo.SunamoExceptions;
+global using Microsoft.Win32;
+global using SunamoWpf.Extensions._sunamo;
 global using System.Collections.ObjectModel;
 global using System.Diagnostics;
 global using System.Diagnostics.CodeAnalysis;

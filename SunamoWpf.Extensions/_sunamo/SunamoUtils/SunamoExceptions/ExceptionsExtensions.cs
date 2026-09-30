@@ -1,5 +1,5 @@
-﻿#define ASYNC
-namespace SunamoWpf._sunamo.SunamoExceptions;
+#define ASYNC
+namespace SunamoWpf.Extensions._sunamo;
 
 internal static class ExceptionsExtensions
 {
