@@ -29,7 +29,7 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         public ErrorEventHandler Error = delegate { };
         public EventHandler Disposed = delegate { };
         public PathAvailabilityHandler PathAvailability = delegate { };
-        private string p;
+        private string path;
         private string p_2;
         #endregion Event Definitions
 
@@ -48,10 +48,10 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         }
 
     static Type type = typeof(WatcherEx);
-        public WatcherEx(string p, string p_2)
+        public WatcherEx(string path, string p_2)
         {
             // TODO: Complete member initialization
-            this.p = p;
+            this.path = path;
             this.p_2 = p_2;
         }
         #endregion Constructors
@@ -81,9 +81,9 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         public void DisposeWatchers()
         {
             //////Debug.WriteLine("WatcherEx.DisposeWatchers()");
-            for (int i = 0; i < this.watchers.Count; i++)
+            for (int index = 0; index < this.watchers.Count; index++)
             {
-                this.watchers[i].Dispose();
+                this.watchers[index].Dispose();
             }
             this.watchers.Clear();
         }
@@ -240,10 +240,10 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         /// </summary>
         public void Start()
         {
-            for (int i = 0; i < this.watchers.Count; i++)
+            for (int index = 0; index < this.watchers.Count; index++)
             {
-                this.watchers[i].EnableRaisingEvents = true;
-                this.watchers[i].StartFolderMonitor();
+                this.watchers[index].EnableRaisingEvents = true;
+                this.watchers[index].StartFolderMonitor();
             }
         }
 
@@ -252,10 +252,10 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
 
             set
             {
-                for (int i = 0; i < this.watchers.Count; i++)
+                for (int index = 0; index < this.watchers.Count; index++)
                 {
                     //FileSystemWatcherEx ex = (FileSystemWatcherEx) this.watchers[i];
-                    this.watchers[i].Run = value;
+                    this.watchers[index].Run = value;
 
                 }
             }
@@ -270,9 +270,9 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         {
             //////Debug.WriteLine("WatcherEx.Stop()");
             this.watchers[0].StopFolderMonitor();
-            for (int i = 0; i < this.watchers.Count; i++)
+            for (int index = 0; index < this.watchers.Count; index++)
             {
-                this.watchers[i].EnableRaisingEvents = false;
+                this.watchers[index].EnableRaisingEvents = false;
             }
         }
         #endregion Helper Methods
@@ -284,11 +284,11 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         /// triggered.
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void watcher_ChangedAttribute(object sender, FileSystemEventArgs e)
+        /// <param name="eventArgs"></param>
+        private void watcher_ChangedAttribute(object sender, FileSystemEventArgs eventArgs)
         {
             //////Debug.WriteLine("EVENT - Changed Attribute");
-            ChangedAttribute(this, e);
+            ChangedAttribute(this, eventArgs);
         }
 
         // -------------------------------------------------------------------------------
@@ -297,11 +297,11 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         /// triggered.
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void watcher_ChangedCreationTime(object sender, FileSystemEventArgs e)
+        /// <param name="eventArgs"></param>
+        private void watcher_ChangedCreationTime(object sender, FileSystemEventArgs eventArgs)
         {
             //////Debug.WriteLine("EVENT - Changed CreationTime");
-            ChangedCreationTime(this, e);
+            ChangedCreationTime(this, eventArgs);
         }
 
         // -------------------------------------------------------------------------------
@@ -310,11 +310,11 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         /// triggered.
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void watcher_ChangedDirectoryName(object sender, FileSystemEventArgs e)
+        /// <param name="eventArgs"></param>
+        private void watcher_ChangedDirectoryName(object sender, FileSystemEventArgs eventArgs)
         {
             //////Debug.WriteLine("EVENT - Changed DirectoryName");
-            ChangedDirectoryName(this, e);
+            ChangedDirectoryName(this, eventArgs);
         }
 
         // -------------------------------------------------------------------------------
@@ -323,11 +323,11 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         /// triggered.
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void watcher_ChangedFileName(object sender, FileSystemEventArgs e)
+        /// <param name="eventArgs"></param>
+        private void watcher_ChangedFileName(object sender, FileSystemEventArgs eventArgs)
         {
             //////Debug.WriteLine("EVENT - Changed FileName");
-            ChangedFileName(this, e);
+            ChangedFileName(this, eventArgs);
         }
 
         // -------------------------------------------------------------------------------
@@ -336,11 +336,11 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         /// changes is triggered.
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void watcher_ChangedLastAccess(object sender, FileSystemEventArgs e)
+        /// <param name="eventArgs"></param>
+        private void watcher_ChangedLastAccess(object sender, FileSystemEventArgs eventArgs)
         {
             //////Debug.WriteLine("EVENT - Changed LastAccess");
-            ChangedLastAccess(this, e);
+            ChangedLastAccess(this, eventArgs);
         }
 
         // -------------------------------------------------------------------------------
@@ -349,11 +349,11 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         /// changes is triggered.
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void watcher_ChangedLastWrite(object sender, FileSystemEventArgs e)
+        /// <param name="eventArgs"></param>
+        private void watcher_ChangedLastWrite(object sender, FileSystemEventArgs eventArgs)
         {
             //////Debug.WriteLine("EVENT - Changed LastWrite");
-            ChangedLastWrite(this, e);
+            ChangedLastWrite(this, eventArgs);
         }
 
         // -------------------------------------------------------------------------------
@@ -362,11 +362,11 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         /// triggered.
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void watcher_ChangedSecurity(object sender, FileSystemEventArgs e)
+        /// <param name="eventArgs"></param>
+        private void watcher_ChangedSecurity(object sender, FileSystemEventArgs eventArgs)
         {
             //////Debug.WriteLine("EVENT - Changed Security");
-            ChangedSecurity(this, e);
+            ChangedSecurity(this, eventArgs);
         }
 
         // -------------------------------------------------------------------------------
@@ -375,11 +375,11 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         /// triggered.
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void watcher_ChangedSize(object sender, FileSystemEventArgs e)
+        /// <param name="eventArgs"></param>
+        private void watcher_ChangedSize(object sender, FileSystemEventArgs eventArgs)
         {
             //////Debug.WriteLine("EVENT - Changed Size");
-            ChangedSize(this, e);
+            ChangedSize(this, eventArgs);
         }
 
         // -------------------------------------------------------------------------------
@@ -387,11 +387,11 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         /// Fired when an public watcher is disposed
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void watcher_Disposed(object sender, EventArgs e)
+        /// <param name="eventArgs"></param>
+        private void watcher_Disposed(object sender, EventArgs eventArgs)
         {
             //////Debug.WriteLine("EVENT - Disposed");
-            Disposed(this, e);
+            Disposed(this, eventArgs);
         }
 
         // -------------------------------------------------------------------------------
@@ -400,11 +400,11 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         /// error is part of the event's arguments object)
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void watcher_Error(object sender, ErrorEventArgs e)
+        /// <param name="eventArgs"></param>
+        private void watcher_Error(object sender, ErrorEventArgs eventArgs)
         {
             //////Debug.WriteLine("EVENT - Error");
-            Error(this, e);
+            Error(this, eventArgs);
         }
 
         // -------------------------------------------------------------------------------
@@ -412,35 +412,35 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         /// Fired when the main watcher detects a file rename.
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void watcher_Renamed(object sender, RenamedEventArgs e)
+        /// <param name="eventArgs"></param>
+        private void watcher_Renamed(object sender, RenamedEventArgs eventArgs)
         {
             //////Debug.WriteLine("EVENT - Renamed");
-            Renamed(this, e);
+            Renamed(this, eventArgs);
         }
 
         // -------------------------------------------------------------------------------
-        private void watcher_CreatedDeleted(object sender, FileSystemEventArgs e)
+        private void watcher_CreatedDeleted(object sender, FileSystemEventArgs eventArgs)
         {
-            switch (e.ChangeType)
+            switch (eventArgs.ChangeType)
             {
                 case WatcherChangeTypes.Created:
                     //////Debug.WriteLine("EVENT - Created");
-                    Created(this, e);
+                    Created(this, eventArgs);
                     break;
                 case WatcherChangeTypes.Deleted:
                     //////Debug.WriteLine("EVENT - Changed Deleted");
-                    Deleted(this, e);
+                    Deleted(this, eventArgs);
                     break;
             }
         }
 
         // -------------------------------------------------------------------------------
-        void watcher_EventPathAvailability(object sender, PathAvailablitiyEventArgs e)
+        void watcher_EventPathAvailability(object sender, PathAvailablitiyEventArgs eventArgs)
         {
             //////Debug.WriteLine("EVENT - PathAvailability");
-            PathAvailability(this, e);
-            if (e.PathIsAvailable)
+            PathAvailability(this, eventArgs);
+            if (eventArgs.PathIsAvailable)
             {
                 DisposeWatchers();
                 Initialize();

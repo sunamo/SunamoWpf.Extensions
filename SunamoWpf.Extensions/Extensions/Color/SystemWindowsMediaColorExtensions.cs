@@ -2,8 +2,8 @@ namespace SunamoWpf.Extensions.Color;
 
 public static class SystemWindowsMediaColorExtensions
 {
-    public static System.Drawing.Color ToSystemDrawing(this System.Windows.Media.Color c)
+    public static System.Drawing.Color ToSystemDrawing(this System.Windows.Media.Color color)
     {
-        return System.Drawing.Color.FromArgb(c.A, c.R, c.G, c.B);
+        return System.Drawing.Color.FromArgb(color.A, color.R, color.G, color.B);
     }
 }

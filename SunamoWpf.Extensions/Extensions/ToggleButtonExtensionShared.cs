@@ -1,11 +1,11 @@
 namespace SunamoWpf.Extensions;
 
 public static partial class ToggleButtonExtensions{ 
-public static bool IsCheckedSimple(this ToggleButton tb)
+public static bool IsCheckedSimple(this ToggleButton toggleButton)
     {
-        if (tb.IsChecked.HasValue)
+        if (toggleButton.IsChecked.HasValue)
         {
-            return tb.IsChecked.Value;
+            return toggleButton.IsChecked.Value;
         }
 
         return false;
