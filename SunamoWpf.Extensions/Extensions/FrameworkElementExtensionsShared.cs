@@ -1,13 +1,13 @@
 namespace SunamoWpf.Extensions;
 
 public static partial class FrameworkElementExtensions{ 
-public static double ActualHeight(this FrameworkElement fe)
+public static double ActualHeight(this FrameworkElement element)
     {
-        if (fe == null)
+        if (element == null)
         {
             return 0;
         }
 
-        return fe.ActualHeight;
+        return element.ActualHeight;
     }
 }
