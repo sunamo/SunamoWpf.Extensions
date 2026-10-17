@@ -24,7 +24,7 @@
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
     <Optimize>false</Optimize>
-    <PackageReleaseNotes>Sync SunamoWpf.Extensions with wnp</PackageReleaseNotes>
+    <PackageReleaseNotes>Rename short identifiers to descriptive names</PackageReleaseNotes>
     <NoWarn>CA1416;CS8625;CS8602;CS8600;CS8618;CS8622;CS8601</NoWarn>
   </PropertyGroup>
   <ItemGroup>

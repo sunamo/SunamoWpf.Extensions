@@ -1,4 +1,4 @@
-﻿global using System.Threading;
+global using System.Threading;
 global using System.Collections;
 global using System.Windows.Threading;
 global using SunamoWpf.ControlExtension;
