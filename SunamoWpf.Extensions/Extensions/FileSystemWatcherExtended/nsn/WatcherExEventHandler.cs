@@ -8,4 +8,4 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.nsn;
 /// </summary>
 /// <param name="sender"></param>
 /// <param name="e"></param>
-public delegate void WatcherExEventHandler(object sender, WatcherExEventArgs e);
+public delegate void WatcherExEventHandler(object sender, WatcherExEventArgs eventArgs);

@@ -8,14 +8,14 @@ public static partial class SystemWindowsSizeExtensions
     /// <summary>
     /// Může se použít jen pokud není velikost nekonečná
     /// </summary>
-    /// <param name="s"></param>
-    public static System.Drawing.Size ToDrawing(this Size s)
+    /// <param name="size"></param>
+    public static System.Drawing.Size ToDrawing(this Size size)
     {
-        return new System.Drawing.Size((int)s.Width, (int)s.Height);
+        return new System.Drawing.Size((int)size.Width, (int)size.Height);
     }
 
-    public static System.Windows.Size ToSunamo(this Size s)
+    public static System.Windows.Size ToSunamo(this Size size)
     {
-        return new System.Windows.Size(s.Width, s.Height);
+        return new System.Windows.Size(size.Width, size.Height);
     }
 }

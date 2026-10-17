@@ -24,12 +24,12 @@ public class TextBoxCaretBehaviour
         obj.SetValue(ObserveCaretProperty, value);
     }
 
-    private static void OnObserveCaretPropertyChanged(DependencyObject dpo, DependencyPropertyChangedEventArgs e)
+    private static void OnObserveCaretPropertyChanged(DependencyObject dpo, DependencyPropertyChangedEventArgs eventArgs)
     {
         TextBox textBox = dpo as TextBox;
         if (textBox != null)
         {
-            if ((bool)e.NewValue == true)
+            if ((bool)eventArgs.NewValue == true)
             {
                 textBox.SelectionChanged += textBox_SelectionChanged;
             }
@@ -40,7 +40,7 @@ public class TextBoxCaretBehaviour
         }
     }
 
-    static void textBox_SelectionChanged(object sender, RoutedEventArgs e)
+    static void textBox_SelectionChanged(object sender, RoutedEventArgs eventArgs)
     {
         TextBox textBox = sender as TextBox;
         int caretIndex = textBox.CaretIndex;
