@@ -1,8 +1,14 @@
 namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Common;
 
+    /// <summary>
+    /// Represents the watcher info type.
+    /// </summary>
     public class WatcherInfo
     {
         string watchPath = null;
+        /// <summary>
+        /// The watch path.
+        /// </summary>
         public string WatchPath
         {
             get
@@ -16,6 +22,9 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Common;
         }
 
     bool includeSubFolders = false;
+        /// <summary>
+        /// The include sub folders.
+        /// </summary>
         public bool IncludeSubFolders
         {
             get
@@ -29,6 +38,9 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Common;
         }
 
     bool watchForError = false;
+        /// <summary>
+        /// The watch for error.
+        /// </summary>
         public bool WatchForError
         {
             get
@@ -40,6 +52,9 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Common;
                 watchForError = value;
             }
         }bool watchForDisposed = false;
+        /// <summary>
+        /// The watch for disposed.
+        /// </summary>
         public bool WatchForDisposed
         {
             get
@@ -51,6 +66,9 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Common;
                 watchForDisposed = value;
             }
         }System.IO.NotifyFilters changesFilters = NotifyFilters.FileName;
+        /// <summary>
+        /// The changes filters.
+        /// </summary>
         public System.IO.NotifyFilters ChangesFilters
         {
             get
@@ -62,6 +80,9 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Common;
                 changesFilters = value;
             }
         }WatcherChangeTypes watchesFilters = WatcherChangeTypes.All;
+        /// <summary>
+        /// The watches filters.
+        /// </summary>
         public WatcherChangeTypes WatchesFilters
         {
             get
@@ -73,6 +94,9 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Common;
                 watchesFilters = value;
             }
         }string fileFilter = null;
+        /// <summary>
+        /// The file filter.
+        /// </summary>
         public string FileFilter
         {
             get
@@ -84,6 +108,9 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Common;
                 fileFilter = value;
             }
         }uint bufferKBytes = 0;
+        /// <summary>
+        /// The buffer k bytes.
+        /// </summary>
         public uint BufferKBytes
         {
             get
@@ -95,6 +122,9 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Common;
                 bufferKBytes = value;
             }
         }int monitorPathInterval = 0;
+        /// <summary>
+        /// The monitor path interval.
+        /// </summary>
         public int MonitorPathInterval
         {
             get
@@ -108,6 +138,9 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Common;
         }
 
         // -------------------------------------------------------------------------------
+        /// <summary>
+        /// Initializes a new instance of the watcher info class.
+        /// </summary>
         public WatcherInfo()
         {
             this.WatchPath = "";

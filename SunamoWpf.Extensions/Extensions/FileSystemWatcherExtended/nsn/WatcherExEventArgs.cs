@@ -10,6 +10,9 @@ public class WatcherExEventArgs
 {
     #region Properties
     FileSystemWatcherEx watcher = null;
+    /// <summary>
+    /// The watcher.
+    /// </summary>
     public FileSystemWatcherEx Watcher
     {
         get
@@ -21,6 +24,9 @@ public class WatcherExEventArgs
             watcher = value;
         }
     }object arguments = null;
+    /// <summary>
+    /// The arguments.
+    /// </summary>
     public object Arguments
     {
         get
@@ -32,6 +38,9 @@ public class WatcherExEventArgs
             arguments = value;
         }
     }ArgumentType argType = ArgumentType.StandardEvent;
+    /// <summary>
+    /// The arg type.
+    /// </summary>
     public ArgumentType ArgType
     {
         get
@@ -43,6 +52,9 @@ public class WatcherExEventArgs
             argType = value;
         }
     }NotifyFilters filter = NotifyFilters.FileName;
+    /// <summary>
+    /// The filter.
+    /// </summary>
     public NotifyFilters Filter
     {
         get
@@ -57,6 +69,13 @@ public class WatcherExEventArgs
     #endregion Properties
 
     #region Constructors
+    /// <summary>
+    /// Initializes a new instance of the watcher ex event args class.
+    /// </summary>
+    /// <param name="watcher">The watcher.</param>
+    /// <param name="arguments">The arguments.</param>
+    /// <param name="argType">The arg type.</param>
+    /// <param name="filter">The filter.</param>
     public WatcherExEventArgs(FileSystemWatcherEx watcher,
                               object arguments,
                               ArgumentType argType,
@@ -67,6 +86,12 @@ public class WatcherExEventArgs
         ArgType = argType;
         Filter = filter;
     }
+    /// <summary>
+    /// Initializes a new instance of the watcher ex event args class.
+    /// </summary>
+    /// <param name="watcher">The watcher.</param>
+    /// <param name="arguments">The arguments.</param>
+    /// <param name="argType">The arg type.</param>
     public WatcherExEventArgs(FileSystemWatcherEx watcher,
                               object arguments,
                               ArgumentType argType)

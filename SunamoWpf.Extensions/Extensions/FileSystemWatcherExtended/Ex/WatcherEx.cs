@@ -15,19 +15,61 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         #endregion Data Members
 
         #region Event Definitions
+        /// <summary>
+        /// The changed attribute.
+        /// </summary>
         public event FileSystemEventHandler ChangedAttribute = delegate { };
+        /// <summary>
+        /// The changed creation time.
+        /// </summary>
         public FileSystemEventHandler ChangedCreationTime = delegate { };
+        /// <summary>
+        /// The changed directory name.
+        /// </summary>
         public FileSystemEventHandler ChangedDirectoryName = delegate { };
+        /// <summary>
+        /// The changed file name.
+        /// </summary>
         public FileSystemEventHandler ChangedFileName = delegate { };
+        /// <summary>
+        /// The changed last access.
+        /// </summary>
         public FileSystemEventHandler ChangedLastAccess = delegate { };
+        /// <summary>
+        /// The changed last write.
+        /// </summary>
         public FileSystemEventHandler ChangedLastWrite = delegate { };
+        /// <summary>
+        /// The changed security.
+        /// </summary>
         public FileSystemEventHandler ChangedSecurity = delegate { };
+        /// <summary>
+        /// The changed size.
+        /// </summary>
         public FileSystemEventHandler ChangedSize = delegate { };
+        /// <summary>
+        /// The created.
+        /// </summary>
         public FileSystemEventHandler Created = delegate { };
+        /// <summary>
+        /// The deleted.
+        /// </summary>
         public FileSystemEventHandler Deleted = delegate { };
+        /// <summary>
+        /// The renamed.
+        /// </summary>
         public RenamedEventHandler Renamed = delegate { };
+        /// <summary>
+        /// The error.
+        /// </summary>
         public ErrorEventHandler Error = delegate { };
+        /// <summary>
+        /// The disposed.
+        /// </summary>
         public EventHandler Disposed = delegate { };
+        /// <summary>
+        /// The path availability.
+        /// </summary>
         public PathAvailabilityHandler PathAvailability = delegate { };
         private string path;
         private string p_2;
@@ -35,6 +77,10 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
 
         #region Constructors
         // -------------------------------------------------------------------------------
+        /// <summary>
+        /// Initializes a new instance of the watcher ex class.
+        /// </summary>
+        /// <param name="info">The info.</param>
         public WatcherEx(WatcherInfo info)
         {
             if (info == null)
@@ -48,6 +94,11 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         }
 
     static Type type = typeof(WatcherEx);
+        /// <summary>
+        /// Initializes a new instance of the watcher ex class.
+        /// </summary>
+        /// <param name="path">The path.</param>
+        /// <param name="p_2">The p 2.</param>
         public WatcherEx(string path, string p_2)
         {
             // TODO: Complete member initialization
@@ -247,6 +298,9 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
             }
         }
 
+        /// <summary>
+        /// The run.
+        /// </summary>
         public bool Run
         {
 

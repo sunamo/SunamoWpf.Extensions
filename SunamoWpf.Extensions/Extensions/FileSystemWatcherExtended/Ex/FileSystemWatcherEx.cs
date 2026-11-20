@@ -1,20 +1,41 @@
 namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
 
+    /// <summary>
+    /// Represents the file system watcher ex type.
+    /// </summary>
     public class FileSystemWatcherEx : FileSystemWatcher
     {
         // set a reasonable maximum interval time
+        /// <summary>
+        /// The max interval.
+        /// </summary>
         public readonly int MaxInterval = 60000;
 
+        /// <summary>
+        /// The event path availability.
+        /// </summary>
         public event PathAvailabilityHandler EventPathAvailability = delegate { };
 
         private bool IsNetworkAvailable = true;
         private int Interval = 100;
+        /// <summary>
+        /// The thread.
+        /// </summary>
         public Thread thread = null;
+        /// <summary>
+        /// The name.
+        /// </summary>
         public string Name = "FileSystemWatcherEx";
+        /// <summary>
+        /// The run.
+        /// </summary>
         public bool Run = false;
 
         #region Constructors
         // -------------------------------------------------------------------------------
+        /// <summary>
+        /// Initializes a new instance of the file system watcher ex class.
+        /// </summary>
         public FileSystemWatcherEx()
             : base()
         {
@@ -22,6 +43,10 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         }
 
         // -------------------------------------------------------------------------------
+        /// <summary>
+        /// Initializes a new instance of the file system watcher ex class.
+        /// </summary>
+        /// <param name="path">The path.</param>
         public FileSystemWatcherEx(string path)
             : base(path)
         {
@@ -29,6 +54,10 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         }
 
         // -------------------------------------------------------------------------------
+        /// <summary>
+        /// Initializes a new instance of the file system watcher ex class.
+        /// </summary>
+        /// <param name="interval">The interval.</param>
         public FileSystemWatcherEx(int interval)
             : base()
         {
@@ -37,6 +66,11 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         }
 
         // -------------------------------------------------------------------------------
+        /// <summary>
+        /// Initializes a new instance of the file system watcher ex class.
+        /// </summary>
+        /// <param name="path">The path.</param>
+        /// <param name="interval">The interval.</param>
         public FileSystemWatcherEx(string path, int interval)
             : base(path)
         {
@@ -45,6 +79,11 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         }
 
         // -------------------------------------------------------------------------------
+        /// <summary>
+        /// Initializes a new instance of the file system watcher ex class.
+        /// </summary>
+        /// <param name="interval">The interval.</param>
+        /// <param name="name">The name.</param>
         public FileSystemWatcherEx(int interval, string name)
             : base()
         {
@@ -54,6 +93,12 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         }
 
         // -------------------------------------------------------------------------------
+        /// <summary>
+        /// Initializes a new instance of the file system watcher ex class.
+        /// </summary>
+        /// <param name="path">The path.</param>
+        /// <param name="interval">The interval.</param>
+        /// <param name="name">The name.</param>
         public FileSystemWatcherEx(string path, int interval, string name)
             : base(path)
         {
