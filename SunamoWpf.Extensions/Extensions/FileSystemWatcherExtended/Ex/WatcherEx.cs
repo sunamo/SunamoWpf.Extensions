@@ -39,7 +39,7 @@ namespace SunamoWpf.Extensions.FileSystemWatcherExtended.Ex;
         {
             if (info == null)
             {
-                ThrowEx.Custom(Translate.FromKey(XlfKeys.WatcherInfoObjectCannotBeNull));
+                ThrowEx.Custom("Watcher info object cannot be null");
             }
             this.watcherInfo = info;
 
