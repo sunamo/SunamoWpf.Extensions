@@ -14,6 +14,11 @@ public static partial class SystemWindowsSizeExtensions
         return new System.Drawing.Size((int)size.Width, (int)size.Height);
     }
 
+    /// <summary>
+    /// To sunamo.
+    /// </summary>
+    /// <param name="size">The size.</param>
+    /// <returns>The to sunamo result.</returns>
     public static System.Windows.Size ToSunamo(this Size size)
     {
         return new System.Windows.Size(size.Width, size.Height);
